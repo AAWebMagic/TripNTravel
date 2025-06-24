@@ -139,8 +139,8 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  mt-2;
-  w-48;
+  margin-top: 8px;
+  width: 200px;
   background: white;
   border-radius: 12px;
   box-shadow: 0 10px 40px var(--shadow-blue);
