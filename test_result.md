@@ -269,11 +269,7 @@ metadata:
   run_ui: false
 
 test_plan:
-  current_focus:
-    - "Basic API endpoints setup"
-    - "Newsletter subscription endpoint" 
-    - "Travel packages endpoint"
-    - "Contact inquiry endpoint"
+  current_focus: []
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
