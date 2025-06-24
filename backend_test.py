@@ -178,7 +178,7 @@ def run_tests():
     test_suite.addTest(TripNTravelAPITest('test_05_newsletter_subscription_invalid_email'))
     test_suite.addTest(TripNTravelAPITest('test_06_contact_inquiry_valid'))
     test_suite.addTest(TripNTravelAPITest('test_07_contact_inquiry_invalid'))
-    test_suite.addTest(TripNTravelAPITest('test_08_cors_headers'))
+    test_suite.addTest(TripNTravelAPITest('test_08_api_response_format'))
     
     # Run the tests
     runner = unittest.TextTestRunner(verbosity=2)
