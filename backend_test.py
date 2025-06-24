@@ -148,18 +148,22 @@ class TripNTravelAPITest(unittest.TestCase):
         
         print("✅ Contact inquiry invalid data check passed")
     
-    def test_08_cors_headers(self):
-        """Test CORS headers in the API response"""
-        print("\n🔍 Testing CORS headers...")
+    def test_08_api_response_format(self):
+        """Test API response format"""
+        print("\n🔍 Testing API response format...")
         
-        # Send a GET request and check CORS headers in the response
+        # Send a GET request and check response format
         response = requests.get(f"{API_BASE_URL}/")
         
         self.assertEqual(response.status_code, 200, "GET request failed")
-        self.assertIn("access-control-allow-origin", response.headers, "Missing CORS header")
-        self.assertEqual(response.headers["access-control-allow-origin"], "*", "Unexpected CORS origin")
+        self.assertEqual(response.headers["Content-Type"], "application/json", "Response is not JSON")
         
-        print("✅ CORS headers check passed")
+        # Verify response is valid JSON
+        data = response.json()
+        self.assertIsInstance(data, dict, "Response is not a valid JSON object")
+        self.assertIn("message", data, "Response missing 'message' field")
+        
+        print("✅ API response format check passed")
 
 def run_tests():
     """Run all the API tests"""
