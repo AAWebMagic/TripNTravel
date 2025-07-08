@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T3VGVEDZ7V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T3VGVEDZ7V');
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Top Deals - Trip N Travel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Trip N Travel Logo" />
+    </div>
+    <nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="packages.html">Holiday Packages</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="topDeals.html" class="active">Top Deals</a></li>
+        <li><a href="inquiry.html">Inquiry</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero deals-hero" style="background-image: url('images/deals-hero.jpg');">
+    <div class="hero-content">
+      <h1>Top Holiday Deals</h1>
+      <p>Unmissable savings on dream getaways. Book now before they're gone!</p>
+    </div>
+  </section>
+
+  <!-- Deals Grid -->
+  <section class="container">
+    <h2>Hot Deals You’ll Love</h2>
+    <div class="packages">
+      <div class="card">
+        <div class="card-image" style="background-image: url('images/deal1.jpg');"></div>
+        <div class="card-content">
+          <h3>Maldives Luxury All-Inclusive</h3>
+          <p class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </p>
+          <span class="price-tag">Save £500 · From £1,299 pp</span>
+          <a href="#" class="btn-outline">Grab Deal</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image" style="background-image: url('images/deal2.jpg');"></div>
+        <div class="card-content">
+          <h3>Paris Romantic Getaway</h3>
+          <p class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </p>
+          <span class="price-tag">Flash Sale · From £499 pp</span>
+          <a href="#" class="btn-outline">Grab Deal</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image" style="background-image: url('images/deal3.jpg');"></div>
+        <div class="card-content">
+          <h3>Dubai Premium Shopping Tour</h3>
+          <p class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </p>
+          <span class="price-tag">Limited Offer · From £899 pp</span>
+          <a href="#" class="btn-outline">Grab Deal</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner container">
+    <i class="fa-solid fa-plane-up cta-icon"></i>
+    <h2>Ready to secure your dream deal?</h2>
+    <p>Don’t wait! These exclusive offers are limited. Contact us now to book your escape.</p>
+    <div class="cta-buttons">
+      <a href="tel:+441234567890" class="btn">Call Now</a>
+      <a href="inquiry.html" class="btn-outline">Send Inquiry</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/footer-logo.png" alt="Trip N Travel Logo" />
+      </div>
+      <div class="footer-links">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="inquiry.html">Inquiry</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <p>&copy; 2025 Trip N Travel. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+    mobileMenu.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
